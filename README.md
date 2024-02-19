@@ -1,5 +1,5 @@
 # rich-feedback-reasoning
-This repository contains the data for the AAAI workshop paper titled 'Improving Multi-Hop Reasoning in LLMs by Learning from Rich Human Feedback'
+This repository contains the data for the AAAI workshop paper titled [Improving Multi-Hop Reasoning in LLMs by Learning from Rich Human Feedback](https://openreview.net/forum?id=wxfqhp9bNR).
 
 We collect rich human feedback for two datasets: strategyQA (located in `data/strategyqa`) and sports understanding from BigBench (location in `data/sports_understanding`).
 
@@ -20,6 +20,21 @@ The `train.json` file for strategyQA and sports understanding contains 1565 exam
 5. **ErrorType** - list of different types of errors present in the model generation (**Generation**). The types of errors and their shorthands are: FE - factual error, MF - missing fact, IR - irrelevant fact, LI - logical inconsistency, None - no error.
 
 6. **\{ErrorType\}_reason** - where ErrorType is either FE, MF, IR, LI. This contains the reason, in natural language, why that particular error type is present in the model generation.
+
+### Citation
+
+If you use this dataset, please include the following citation:
+
+```bibtex
+@inproceedings{
+joshi2023improving,
+    title={Improving Multi-Hop Reasoning in {LLM}s by Learning from Rich Human Feedback},
+    author={Nitish Joshi and Koushik Kalyanaraman and Zhiting Hu and Kumar Chellapilla and He He and Li Erran Li},
+    booktitle={Neuro-Symbolic Learning and Reasoning in the era of Large Language Models},
+    year={2023},
+    url={https://openreview.net/forum?id=wxfqhp9bNR}
+}
+```
 
 
 
